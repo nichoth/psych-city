@@ -1,5 +1,24 @@
 {
+  "name": "psych-city",
+  "description": "a website",
+  "version": "0.0.0",
+  "main": "index.js",
+  "dependencies": {},
   "devDependencies": {
     "netlify-cli": "^2.69.11"
-  }
+  },
+  "scripts": {
+    "start": "netlify dev",
+    "test": "tape test/**/*.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nichoth/psych-city.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nichoth/psych-city/issues"
+  },
+  "homepage": "https://github.com/nichoth/psych-city#readme"
 }
