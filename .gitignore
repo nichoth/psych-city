@@ -109,5 +109,6 @@ bundle.js
 
 # Local Netlify folder
 .netlify
-public/*
+
+public/style.css
 
