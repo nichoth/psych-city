@@ -4,7 +4,8 @@
   "version": "0.0.0",
   "main": "index.js",
   "scripts": {
-    "start": "npm run sass && concurrently --kill-others \"netlify dev\" \"npm run sass-watch\"",
+    "start": "npm run sass && concurrently --kill-others \"budo --dir public/ --open --live\" \"npm run sass-watch\"",
+    "dev": "netlify dev",
     "build": "cp src/* public/ && npm run sass",
     "sass": "node-sass src/style.scss > public/style.css",
     "sass-watch": "node-sass --watch src/style.scss --output public/style.css",
@@ -12,6 +13,7 @@
   },
   "dependencies": {},
   "devDependencies": {
+    "budo": "^11.6.4",
     "concurrently": "^5.3.0",
     "netlify-cli": "^2.69.11",
     "node-sass": "^5.0.0"
