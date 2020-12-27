@@ -6,7 +6,7 @@
   "scripts": {
     "start": "npm run sass && concurrently --kill-others \"budo --dir public/ --open --live\" \"npm run sass-watch\"",
     "dev": "netlify dev",
-    "build": "cp src/* public/ && npm run sass",
+    "build": "npm run sass",
     "sass": "node-sass src/style.scss > public/style.css",
     "sass-watch": "node-sass --watch src/style.scss --output public/",
     "test": "tape test/**/*.js"

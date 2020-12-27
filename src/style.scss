@@ -1,10 +1,18 @@
 body {
+  margin: 0;
   color: white;
   background-color: #262a46;
   font-family: sans-serif;
 
-  .main-words {
-    text-transform: uppercase;
+  img {
+    max-width: 60vw;
+    margin: 0 auto;
+    display: block;
+    mix-blend-mode: lighten;
   }
+
+  // .main-words {
+  //   text-transform: uppercase;
+  // }
 }
 
