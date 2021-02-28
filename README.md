@@ -40,6 +40,9 @@ https://www.netlifycms.org/docs/add-to-your-site/#add-the-netlify-identity-widge
 ### identity
 The localhost site redirects to `whammyanalog` after logging in, but the live site goes to the right place
 
+Need to delete the localStorage thing:
+https://github.com/netlify/netlify-cms/issues/1704
+
 ## netlify cli
 https://cli.netlify.com/netlify-dev#usage
 
