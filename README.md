@@ -42,6 +42,9 @@ The localhost site redirects to `whammyanalog` after logging in, but the live si
 
 Need to delete the localStorage thing:
 https://github.com/netlify/netlify-cms/issues/1704
+```
+localStorage.removeItem("netlifySiteURL")
+```
 
 ## netlify cli
 https://cli.netlify.com/netlify-dev#usage
