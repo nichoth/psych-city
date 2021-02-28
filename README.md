@@ -35,6 +35,11 @@ Also add a `script` tag to the body of `/index.html`
 
 https://www.netlifycms.org/docs/add-to-your-site/#add-the-netlify-identity-widget
 
+-----------------------------------------
+
+### identity
+The localhost site redirects to `whammyanalog` after logging in, but the live site goes to the right place
+
 ## netlify cli
 https://cli.netlify.com/netlify-dev#usage
 
