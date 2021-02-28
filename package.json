@@ -7,7 +7,7 @@
     "start": "npm run build && concurrently --kill-others \"budo --dir public/ --open --live\" \"npm run sass-watch\"",
     "copy": "cp src/admin/* public/admin",
     "dev": "netlify dev",
-    "build": "npm run copy && npm run sass",
+    "build": "mkdir -p public/admin && npm run copy && npm run sass",
     "sass": "sass src/style.scss public/style.css",
     "sass-watch": "sass --watch src/style.scss public/style.css",
     "test": "tape test/**/*.js"

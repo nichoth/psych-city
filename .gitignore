@@ -111,6 +111,5 @@ bundle.js
 .netlify
 
 public/style.css
-
-public/admin/
+public/admin/*
 
