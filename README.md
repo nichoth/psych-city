@@ -35,7 +35,8 @@ Also add a `script` tag to the body of `/index.html`
 
 https://www.netlifycms.org/docs/add-to-your-site/#add-the-netlify-identity-widget
 
-
+## netlify cli
+https://cli.netlify.com/netlify-dev#usage
 
 
 
