@@ -8,16 +8,15 @@
     "copy": "cp src/admin/* public/admin",
     "dev": "netlify dev",
     "build": "npm run copy && npm run sass",
-    "sass": "node-sass src/style.scss > public/style.css",
-    "sass-watch": "node-sass --watch src/style.scss --output public/",
+    "sass": "sass src/style.scss public/style.css",
+    "sass-watch": "sass --watch src/style.scss public/style.css",
     "test": "tape test/**/*.js"
   },
-  "dependencies": {},
   "devDependencies": {
     "budo": "^11.6.4",
     "concurrently": "^5.3.0",
     "netlify-cli": "^2.69.11",
-    "node-sass": "^5.0.0"
+    "sass": "^1.32.8"
   },
   "repository": {
     "type": "git",
