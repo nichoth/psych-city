@@ -17,6 +17,24 @@ https://www.netlifycms.org/docs/add-to-your-site/
 * make a media folder for uploads. In the config it is `media_folder` -- where in the repo they are saved. `public_folder` is the path relative to site root
 
 ### authentication
+Registration is open for testing.
+
+Go to Settings > Identity, and select Enable Identity service.
+
+With the backend set to handle authentication, now you need a frontend interface to connect to it. The open source Netlify Identity Widget is a drop-in widget made for just this purpose. 
+
+Add the netlify ID widget
+
+```
+<script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+```
+
+to `/index.html` and also `/admin/index.html`
+
+Also add a `script` tag to the body of `/index.html`
+
+https://www.netlifycms.org/docs/add-to-your-site/#add-the-netlify-identity-widget
+
 
 
 

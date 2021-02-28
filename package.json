@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "npm run build && concurrently --kill-others \"budo --dir public/ --open --live\" \"npm run sass-watch\"",
-    "copy": "cp src/admin/* public/admin",
+    "copy": "cp src/*.html public && cp src/admin/* public/admin",
     "dev": "netlify dev",
     "build": "mkdir -p public/admin && npm run copy && npm run sass",
     "sass": "sass src/style.scss public/style.css",
