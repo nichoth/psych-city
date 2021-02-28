@@ -4,7 +4,7 @@
   "version": "0.0.0",
   "main": "index.js",
   "scripts": {
-    "start": "npm run sass && concurrently --kill-others \"budo --dir public/ --open --live\" \"npm run sass-watch\"",
+    "start": "npm run build && concurrently --kill-others \"budo --dir public/ --open --live\" \"npm run sass-watch\"",
     "copy": "cp src/admin/* public/admin",
     "dev": "netlify dev",
     "build": "npm run copy && npm run sass",
