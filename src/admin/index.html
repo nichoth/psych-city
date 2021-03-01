@@ -7,14 +7,11 @@
   <title>Content Manager</title>
 </head>
 <body>
-  <!-- Include the script that builds the page and powers Netlify CMS -->
-  <script src="https://unpkg.com/netlify-cms@^2.0.0/dist/netlify-cms.js"></script>
-
   <script>
     if (window.netlifyIdentity) {
       console.log('aaaaaaaaa')
       window.netlifyIdentity.on("init", user => {
-        console.log('arrrr')
+        console.log('arrrr', user)
         if (!user) {
           window.netlifyIdentity.on("login", () => {
             document.location.href = "/admin/";
@@ -23,6 +20,9 @@
       });
     }
   </script>
+
+  <!-- Include the script that builds the page and powers Netlify CMS -->
+  <script src="https://unpkg.com/netlify-cms@^2.0.0/dist/netlify-cms.js"></script>
 
 </body>
 </html>
