@@ -12,6 +12,7 @@
 
   <script>
     if (window.netlifyIdentity) {
+      console.log('aaaaaaaaa')
       window.netlifyIdentity.on("init", user => {
         if (!user) {
           window.netlifyIdentity.on("login", () => {
