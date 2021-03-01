@@ -14,6 +14,7 @@
     if (window.netlifyIdentity) {
       console.log('aaaaaaaaa')
       window.netlifyIdentity.on("init", user => {
+        console.log('arrrr')
         if (!user) {
           window.netlifyIdentity.on("login", () => {
             document.location.href = "/admin/";
