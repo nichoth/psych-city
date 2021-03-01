@@ -66,6 +66,16 @@ Create a new folder in the project's root and name it _includes. This folder wil
 
 > Any element that should appear on every single page should reside in base.njk. Let's add the following to the file
 
+Add these lines to `.eleventy.js`, so that it uses the right folders for input and output
+
+```js
+return {
+    dir: {
+        input: "src",
+        output: "public"
+    }
+}
+```
 
 
 
