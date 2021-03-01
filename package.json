@@ -4,10 +4,11 @@
   "version": "0.0.0",
   "main": "index.js",
   "scripts": {
-    "start": "npm run build && concurrently --kill-others \"budo --dir public/ --open --live\" \"npm run sass-watch\"",
-    "copy": "cp src/*.html public && cp src/admin/* public/admin",
+    "//": "npm run build && concurrently --kill-others \"budo --dir public/ --open --live\" \"npm run sass-watch\"",
+    "start": "npm run build && concurrently --kill-others \"eleventy --serve\" \"npm run sass-watch\"",
+    "copy": "cp src/*.html public && mkdir -p public/admin && cp src/admin/* public/admin",
     "dev": "npm run build && netlify dev",
-    "build": "mkdir -p public/admin && npm run copy && npm run sass",
+    "build": "npm run copy && npm run sass",
     "sass": "sass src/style.scss public/style.css",
     "sass-watch": "sass --watch src/style.scss public/style.css",
     "test": "tape test/**/*.js"
