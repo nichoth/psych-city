@@ -1,6 +1,11 @@
 ---
 layout: layouts/base.njk
-permalink: /posts/
+permalink: /
 ---
 
 <img src="/img/psychedelic-city.jpeg" alt="psychedelic city">
+
+<p>fooooooooo</p>
+
+{% set postslist = collections.posts %}
+{% include "postslist.njk" %}
