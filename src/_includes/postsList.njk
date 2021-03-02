@@ -1,4 +1,4 @@
-<ul>
+<ul class="post-list">
   {% for post in postslist %}
     <li>
       <strong>
@@ -7,7 +7,7 @@
       -
       <time datetime="{{ post.date | htmlDateString }}">{{ post.date | readableDate }}</time>
       -
-      <span>{{ post.data.description }}</span>
+      <p>{{ post.data.description }}</p>
     </li>
   {% endfor %}
 </ul>
