@@ -6,7 +6,7 @@
   "scripts": {
     "//": "npm run build && concurrently --kill-others \"budo --dir public/ --open --live\" \"npm run sass-watch\"",
     "start": "npm run build && concurrently --kill-others \"eleventy --serve\" \"npm run sass-watch\"",
-    "copy": "cp src/*.html public && mkdir -p public/admin && cp src/admin/* public/admin && cp src/uploads/* public/uploads",
+    "copy": "cp src/*.html public && mkdir -p public/admin && cp src/admin/* public/admin && cp src/uploads/* public/uploads && mkdir -p public/img/ && cp src/img/* public/img/",
     "ntl-dev": "npm run build && netlify dev",
     "build": "npm run copy && npm run sass && eleventy",
     "sass": "sass src/style.scss public/style.css",
