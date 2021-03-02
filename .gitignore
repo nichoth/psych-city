@@ -117,5 +117,6 @@ public/config.yml
 public/index--old.html
 
 public/posts/*
-
 public/index--old
+public/*
+
