@@ -79,7 +79,7 @@ return {
 
 ------------------------------------------------
 
-Using hyperstream is possible, would just need to read the files created by netlify CMS. 
+Using hyperstream is possible, would need to read the files created by netlify CMS. 
 
 
 
